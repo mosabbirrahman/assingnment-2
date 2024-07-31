@@ -43,6 +43,32 @@ nav li a{
 nav ul{
 display: flex;
 }
+.glass-container{
+    height: 100vh;
+    position: relative;
+    background:linear-gradient(90deg,
+    rgba(2,0,36,1) 0%,
+    rgba(95,9,121,1)50%,
+    rgba(239,0,255,1 )100%
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.glass{
+    position: absolute;
+    height: 400px;
+    width: 400px;
+    background: rgba(255,255,225,0.38);
+    border-radius: 16px;
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,225,225,0.3);
+}
+#title{
+    rotate: -45deg;
+    font-size: 50px;
+    color: aliceblue;
+}
 .btn-primary{
     background-color: rgb(236, 58, 58);
     padding: 7px;
@@ -115,7 +141,7 @@ th, td {
 }
  .chart{
     background-color: rgb(107, 102, 102);
-   display: flex;
+    display: flex;
     gap: 20px;
     padding: 20px;
     text-align: center;
@@ -148,7 +174,78 @@ select{
 
 .traning-center img{
     width: 100%;
-    height: 300px;
+    height: 250px;
    border-radius: 20px;
+   padding-bottom: px;
+
   
+}
+.full-body{
+    display: flex;
+    margin-top: 60px;
+    padding-left: 100px;
+    gap: 20px;
+    background-color: rgb(99, 91, 91);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    
+}
+li{
+    list-style: none;
+}
+
+
+.frist-card{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.075);
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 900;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    left: 200px;
+    bottom:400px ;
+}
+.second-card{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.082);
+    padding: 1rem;
+    font-size: 40px;
+    font-weight: 900;
+    backdrop-filter: blur(10px);
+    position: absolute;
+    right: 250px;
+    bottom: 1rem;
+}
+
+
+.second-card span{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(221, 42, 42);
+    border-radius: 50%;
+    display: block;
+}
+.frist-card span{
+    height: 40px;
+    width: 40px;
+    background-color: rgb(221, 42, 42);
+    border-radius: 50%;
+    display: block;
+}
+
+
+.img-parent{
+    position: relative;
 }
