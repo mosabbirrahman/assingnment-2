@@ -5,11 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment-02</title>
     <link rel="stylesheet" href="style/css.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+
 </head>
 <body>
     <header class="work-sans-font">
         <nav class="header">
-            <h2> <span class="text-primary"> Fitness</span></h2>
+            <h2> <i class="text-primary"> Fitness</i></h2>
             <ul>
                 <li><a href=""><button class="btn-primary">Home</button></a></li>
                 <li><a href="">Service</a></li>
@@ -23,21 +28,21 @@
 
         <div class="banner"> 
             <div>
-                <h1>Get body in chape and stay healthy</h1>
-                <p>Start with gentle stretching or a short yoga session to wake up your muscles and improve flexibility.</p>
+                <h1 class="padding">Get body in <br> <span class="font">chape</span> and stay <br> healthy</h1>
+                <p class="padding">Start with gentle stretching or a short yoga session to wake up your muscles and improve flexibility.</p>
                 <button class="btn-primary">joyen club now !</button>
                 <button class="baton-primary">Downlood app</button>
             </div>
             <div class="trainer img-parent">
                 <img src="images/Images 2.png" alt="">
-
+ 
                 <div class="frist-card"> <span></span>500 +</div>
                 <div class="second-card"> <span></span> 350 +</div>
             </div>
         </div>
-        <div class="habits">
-            <h1>Change Your Habits</h1>
-            <p>Changing habits can be challenging but definitely doable with some strategies.</p>
+        <div class="habits ">
+            <h1 class="padding">Change Your Habits</h1>
+            <p class="padding">Changing habits can be challenging but definitely doable with some strategies.</p>
         </div>
         <nav class="img-show">
             <div> 
@@ -64,8 +69,8 @@
         <div class="run-section">
             <section class="card">
                 <div>
-                    <h1>Run An Extra Mile Easily</h1>
-                    <p>Start your day by waking up early and drinking a glass of water to rehydrate.</p>
+                    <h1 class="padding">Run An Extra Mile Easily</h1>
+                    <p class="padding">Start your day by waking up early and drinking a glass of water to rehydrate.</p>
                     <button class="btn-primary">joyen now </button>
                 </div>
                 <div>
@@ -74,10 +79,59 @@
             </section>
         </div>
     <div class="calculator">
-        <h1>BMI Calculator</h1>
-        <p>We belive fitness should be accessible to everyone ,everywhere regradless access to a gym</p>
-    </div>
-    <div class="chart">
+        <h1 class="padding">BMI Calculator</h1>
+        <p class="padding">We belive fitness should be accessible to everyone ,everywhere regradless access to a gym</p>
+        </div>
+        <section class="box">
+            <div class="box-1">
+                <h1>BMI calculator chart</h1>
+                <table>
+                    <thead>
+                       <tr>
+                        <th><h3>BMI</h3> </th>
+                        <th><h3>Weight Status</h3></th>
+                       </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>below 18.5</td>
+                            <td>Underweight</td>
+                        </tr>
+                        <tr>
+                            <td>18.5-24.9</td>
+                            <td>healthy</td>
+                        </tr>
+                        <tr>
+                            <td>25.0-29.9</td>
+                            <td>overweight</td>
+                        </tr>
+                        <tr>
+                            <td>30.0-and above</td>
+                            <td>obese</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box-2">
+                <h1>Calculate your BMi</h1>
+                <p>We belive fitness should be accessible to everyone ,everywhere regradless access to a gym</p>
+                <input class="height" type="text" placeholder="Height/cm">
+                <input class="weight" type="text" placeholder="Weight/kg">
+                <div class="container">
+                <input class="age" type="text" placeholder="age">
+                <select class="gender">
+                    <option value="">sex</option>
+                    <option value="">mail</option>
+                    <option value="">femail</option>
+                </select>
+                <select class="activity">
+                    <option value="">select an activity factor</option>
+                </select>
+
+            </div>
+        </section>
+    <!-- </div>
+    <div class="chart ">
     <div class="bmi-chart">
         <h1>BMI calculator chart</h1>
         <table>
@@ -106,39 +160,33 @@
                 </tr>
             </tbody>
         </table>
-    </div>
-
-    <div class="foter">
-        <h1>Calculate your BMI</h1>
-        <p>We belive fitness should be accessible to everyone ,everywhere.of income or access to gym.</p>
-        <div class="box">
-            <input type="number" id="weight" name="weight" placeholder="weight/kg">
-                
-            
-            <input type="number" id="height" name="height" placeholder="height/cm">
-    
         </div>
-                <input type="number" id="age" name="age" placeholder="age">
-                <!-- <input type="sex" id="sex" name="age"placeholder="sex"> -->
-                <select name="sex" id="sex" name="sex" placeholder="sex">
-                    <option value="sex">sex</option>
-                    <option value="male">male</option>
-                    <option value="fimale">female</option>
-                  </select>
-                 <div class="container">
-                    <input type="number" id="select an activity factor" name="select an activity factor" placeholder="select an activity factor">
+        <div class="input-area">
+            <h1>Calculate your BMi</h1>
+            <p>We belive fitness should be accessible to everyone ,everywhere regradless access to a gym</p>
+            <input class="height" type="text" placeholder="Height/cm">
+            <input class="weight" type="text" placeholder="Weight/kg">
+            <div class="container">
+            <input class="age" type="text" placeholder="age">
+            <select class="gender">
+                <option value="">sex</option>
+                <option value="">mail</option>
+                <option value="">femail</option>
+            </select>
+            <div>
+            <select class="activity">
+                <option value="">select an activity factor</option>
+            </select>
+             </div>
+        </div>
+         </div>
+    </div>
     
-                 </div>
-                 <br>
-                 
-                 <button class="btn-foter">Calculate</button>
-            
-    </div>
-    </div>
 </header>
-        <div class="team">
-            <h1>Meet our team </h1>
-            <p> We belive fitness should be accessible to everyone ,everywhere.of income or access to gym.</p>
+  -->
+        <div class="team ">
+            <h1 class="padding">Meet our team </h1>
+            <p class="padding"> We belive fitness should be accessible to everyone ,everywhere.of income or access to gym.</p>
             </div>
             <div class="traning-center">
                 <img src="images/trainer1.png" alt="">
@@ -150,8 +198,9 @@
                 <img src="images/trainer6.png" alt="">
         </div>
         <section class="full-body">
+            <div class="br">
             <div class="fitness">
-                <h2> <span class="text-primary"> Fitness</span></h2>
+                <h2> <i class="text-primary"> Fitness</i></h2>
                 <p>Trainings and Exercises
                     We believe fitness should be accessible to everyone,<br> everywhere, regardless of income or access to a gym.</p>
             </div>
@@ -173,8 +222,12 @@
                     <li>app design</li>
                 </ul>
             </div>
-           
-                   
+            </div>
+            <div class="cr">
+                <hr style="width:80%;text-align:center; margin-bottom: 20px;">
+            <p class="last-item"> All right reserved @Fitness 2024</p> 
+            </div>
         </section>
+        
 </body>
-</html>
+</html> 

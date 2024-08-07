@@ -17,11 +17,14 @@ body{
     color: white;
     
 }
+.padding{
+    padding-bottom: 20px;
+}
 .header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px;
+    margin: 30px;
 
 }
 .text-primary{
@@ -87,7 +90,15 @@ display: flex;
     display: flex;
     gap: 100px;
     align-items: center;
-    padding:100px;
+    padding-left: 50px;
+    padding-right: 50px;
+        font-family: "Calistoga", serif;
+        font-weight: 400;
+        font-style: normal;
+
+}
+.font{
+    font-family: "Sofia", sans-serif;
 }
 .habits{
     text-align: center;
@@ -97,6 +108,7 @@ display: flex;
     border-radius: 20px;
     padding: 20px;
     padding:100px;
+    gap: 20px;
 }
 .trainer{
     border-radius: 50%;
@@ -106,6 +118,7 @@ display: flex;
     height: 312px;
     object-fit: none;
     object-position: 66% 33%;
+
     
     
 }
@@ -117,35 +130,61 @@ display: flex;
     align-items: center;
     background-color: rgb(95, 90, 90);
     padding: 20px;
+    gap: 20px;
     
 } 
 .calculator{
     text-align: center;
     padding-bottom: 20px;
 }
-.bmi-chart{
+.box-1{
+    table{
+        width: 30%;
+        border-collapse: collapse;
+        font-size: 18px;
+        text-align: left;
+        border: 2px solid white;
+    }
+    th,td{
+        padding: 3px 10px;
+        border: 1px solid white;
+    }
+}
+.box-2 input{
+    padding: 5px;
+    gap: 5px;
+}
+.gender{
+    width: 182px;
+    padding: 5px;
+}
+.activity{
+    width: 369px;
+    display: block;
+    padding: 5px;
+}
+/* .bmi-chart{
 table{
-    width: 50%;
+    width: 30%;
     border-collapse: collapse;
     font-size: 18px;
     text-align: left;
     border: 2px solid white;
 }
 th, td {
-    padding: 5px 10px;
+    padding: 3px 10px;
     /* border-bottom: 1px solid #ddd; */
     border: 1px solid white;
-   
+    */
 }
-
 }
- .chart{
+ /* .chart{
     background-color: rgb(107, 102, 102);
-    display: flex;
     gap: 20px;
     padding: 20px;
-    text-align: center;
- }
+    justify-content: space-between;
+    
+ } */
 
 
 select{
@@ -181,7 +220,6 @@ select{
   
 }
 .full-body{
-    display: flex;
     margin-top: 60px;
     padding-left: 100px;
     gap: 20px;
@@ -190,6 +228,11 @@ select{
     padding-bottom: 30px;
 
     
+}
+.br{
+display:flex;
+gap: 40px;
+padding-bottom: 40px;
 }
 li{
     list-style: none;
@@ -248,4 +291,66 @@ li{
 
 .img-parent{
     position: relative;
+}
+.last-item{
+    text-align: center;
+    padding-right: 50px;
+}
+.cr{
+    margin-top: 20px;
+    text-align: center;
+
+}
+/* .input-area{
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+.gender{
+    width: 172px;
+}
+.activity{
+    width: 350px;
+} */
+/* responsive media query */
+.hide{
+    display: none;
+}
+@media screen and (max-width: 576px){
+    .br{
+        flex-direction: column;
+    }
+}
+    @media screen and (max-width: 576px){
+     .traning-center {display: grid;
+       grid-template-columns: repeat(1 ,1fr);
+       margin: 0 auto;
+       width: 500px;
+       gap: 1rem;
+       padding-left: 100px;
+       padding-right: 100px;
+     }
+    }
+@media screen and (max-width: 576px){
+    .input-area,.bmi-chart,.calculator{
+        flex-direction: column;
+        
+    }
+}
+@media screen and (max-width: 576px){
+    .card{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 576px){
+    .img-show,.habits{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width: 576px){
+    .banner,.header,.nav {
+        flex-direction: column;
+
+
+    }
 }
