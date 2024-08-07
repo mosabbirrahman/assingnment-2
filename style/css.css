@@ -135,11 +135,13 @@ display: flex;
 } 
 .calculator{
     text-align: center;
-    padding-bottom: 20px;
+    padding-bottom: 50px;
 }
+    .bmi{
+        padding-bottom: 20px;
+    }
 .box-1{
     table{
-        width: 30%;
         border-collapse: collapse;
         font-size: 18px;
         text-align: left;
@@ -149,47 +151,53 @@ display: flex;
         padding: 3px 10px;
         border: 1px solid white;
     }
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.box{
+    display: flex;
+    background-color: rgb(56, 47, 47);
+    justify-content: center;
+    gap: 30px;
 }
 .box-2 input{
-    padding: 5px;
-    gap: 5px;
+    padding: 7px;
+    border-radius: 7px;
+    background-color: rgb(34, 29, 29);
+
 }
 .gender{
-    width: 182px;
-    padding: 5px;
+    width: 100%;
+    padding: 7px;
+    background-color: rgb(34, 25, 25);
+    border-radius: 5px;
 }
 .activity{
-    width: 369px;
+    width: 203%;
     display: block;
-    padding: 5px;
-}
-/* .bmi-chart{
-table{
-    width: 30%;
-    border-collapse: collapse;
-    font-size: 18px;
-    text-align: left;
-    border: 2px solid white;
-}
-th, td {
-    padding: 3px 10px;
-    /* border-bottom: 1px solid #ddd; */
-    border: 1px solid white;
-    */
-}
-}
- /* .chart{
-    background-color: rgb(107, 102, 102);
-    gap: 20px;
-    padding: 20px;
-    justify-content: space-between;
+    padding: 7px;
+    background-color: rgb(34, 29, 29);
+    border-radius: 5px;
     
- } */
 
-
-select{
-    width: 32%;
 }
+.box-2{
+    padding-left: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.baton{
+    background-color: rgb(226, 24, 24);
+    color: rgb(250, 245, 245);
+    border-radius: 15px;
+    padding: 7px;
+    width: 150px;
+    margin-top: 20px;
+}
+
 .btn-foter{
     background-color: rgb(236, 58, 58);
     padding: 7px;
@@ -201,6 +209,29 @@ select{
     padding-bottom: 20px;
     text-align: center;
 }
+.relative{
+    position: relative;
+    
+}
+.name{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+}
+.border div{
+    display: grid;
+    grid-template-columns: repeat(2,1fr) ;
+    gap:7px;
+}
+
+
+
+
+
+
+
+
+
 .traning-center{
        display: grid;
        grid-template-columns: repeat(3 ,1fr);
@@ -301,18 +332,7 @@ li{
     text-align: center;
 
 }
-/* .input-area{
-    padding: 10px;
-    border-radius: 20px;
-    
-}
-.gender{
-    width: 172px;
-}
-.activity{
-    width: 350px;
-} */
-/* responsive media query */
+
 .hide{
     display: none;
 }
@@ -320,8 +340,10 @@ li{
     .br{
         flex-direction: column;
     }
-}
-    @media screen and (max-width: 576px){
+    .header ul{
+        flex-direction: column;
+    }
+
      .traning-center {display: grid;
        grid-template-columns: repeat(1 ,1fr);
        margin: 0 auto;
@@ -330,27 +352,24 @@ li{
        padding-left: 100px;
        padding-right: 100px;
      }
-    }
-@media screen and (max-width: 576px){
+   
     .input-area,.bmi-chart,.calculator{
         flex-direction: column;
         
     }
-}
-@media screen and (max-width: 576px){
+
     .card{
         flex-direction: column;
     }
-}
-@media screen and (max-width: 576px){
+
     .img-show,.habits{
         flex-direction: column;
     }
-}
-@media screen and (max-width: 576px){
+
     .banner,.header,.nav {
         flex-direction: column;
-
-
+    }
+    .box{
+        flex-direction: column;
     }
 }
