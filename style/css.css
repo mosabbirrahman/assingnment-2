@@ -19,6 +19,7 @@ body{
 }
 .padding{
     padding-bottom: 20px;
+    font-family: "Rubik", sans-serif;;
 }
 .header{
     display: flex;
@@ -98,7 +99,9 @@ display: flex;
 
 }
 .font{
-    font-family: "Sofia", sans-serif;
+    font-family:'maima';
+    font-style: italic;
+    font-weight: 400;
 }
 .habits{
     text-align: center;
@@ -165,23 +168,21 @@ display: flex;
 .box-2 input{
     padding: 7px;
     border-radius: 7px;
-    background-color: rgb(34, 29, 29);
+    background-color: rgb(83, 79, 79);
 
 }
 .gender{
     width: 100%;
     padding: 7px;
-    background-color: rgb(34, 25, 25);
+    background-color: rgb(83, 79, 79);
     border-radius: 5px;
 }
 .activity{
     width: 203%;
     display: block;
     padding: 7px;
-    background-color: rgb(34, 29, 29);
+    background-color: rgb(83, 79, 79);
     border-radius: 5px;
-    
-
 }
 .box-2{
     padding-left: 100px;
@@ -223,15 +224,6 @@ display: flex;
     grid-template-columns: repeat(2,1fr) ;
     gap:7px;
 }
-
-
-
-
-
-
-
-
-
 .traning-center{
        display: grid;
        grid-template-columns: repeat(3 ,1fr);
@@ -277,11 +269,11 @@ li{
     justify-content:space-between;
     width: 200px;
     border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.075);
+    background-color: rgba(255, 255, 255, 0.082);
     padding: 1rem;
     font-size: 40px;
     font-weight: 900;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     position: absolute;
     left: 200px;
     bottom:400px ;
@@ -297,7 +289,7 @@ li{
     padding: 1rem;
     font-size: 40px;
     font-weight: 900;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     position: absolute;
     right: 250px;
     bottom: 1rem;
@@ -337,6 +329,45 @@ li{
     display: none;
 }
 @media screen and (max-width: 576px){
+    .br{
+        flex-direction: column;
+    }
+    .header ul{
+        flex-direction: column;
+    }
+
+     .traning-center {display: grid;
+       grid-template-columns: repeat(1 ,1fr);
+       margin: 0 auto;
+       width: 500px;
+       gap: 1rem;
+       padding-left: 100px;
+       padding-right: 100px;
+     }
+   
+    .input-area,.bmi-chart,.calculator{
+        flex-direction: column;
+        
+    }
+
+    .card{
+        flex-direction: column;
+    }
+
+    .img-show,.habits{
+        flex-direction: column;
+    }
+
+    .banner,.header,.nav {
+        flex-direction: column;
+    }
+    .box{
+        flex-direction: column;
+    }
+} 
+/* tablet specific media quary */
+@media screen and (min-width: 576px)and (max-width :990px){
+
     .br{
         flex-direction: column;
     }
